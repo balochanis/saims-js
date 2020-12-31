@@ -19,7 +19,4 @@ var visitorName = "John Doe";
 var productTitle = "T-Shirt";
 var productQuantity = 5;
 var clothingStore = "XYZ Clothing Store";
-// document.write("<p><b>" + visitorName + "</b>" + " ordered " +  );
-
-//5
-
+document.write("<p><b>" + visitorName + "</b>" + " ordered <b>" + productQuantity + " T-shirts</b>(s) on " + clothingStore);
