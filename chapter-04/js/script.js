@@ -19,4 +19,6 @@ var legal_variable$1;
 
 //3
 document.write("<h1>Rules for naming JS variables</h1>");
-document.write("<p>Variable names can only contain </p>");
+document.write("<p>Variable names can only contain <b>numbers</b>, <b>&dollar;</b> and <b>&UnderBar;</b>. For example: <b>&dollar;my&UnderBar;1stVariable</b></p>");
+document.write("<p>Variable names are case sensitive</p>");
+document.write("<p>Variable names should not be JS keywords</p>");
