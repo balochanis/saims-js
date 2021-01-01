@@ -55,14 +55,14 @@ for(var i = 1; i <= tableLength; i++)
 
 
 //6
-var celsiusInput = +prompt("Enter Temperature in Celsius", "25");
-var fahrenheit = (celsiusInput * 9 / 5) + 32;
-document.write("<p>" + celsiusInput + "<sup>0</sup>C is " + fahrenheit + "<sup>0</sup>F</p>");
+// var celsiusInput = +prompt("Enter Temperature in Celsius", "25");
+// var fahrenheit = (celsiusInput * 9 / 5) + 32;
+// document.write("<p>" + celsiusInput + "<sup>0</sup>C is " + fahrenheit + "<sup>0</sup>F</p>");
 
 
-var fahrenheitInput = +prompt("Enter temperature in Fahrenheit", "70");
-var celsius = (fahrenheitInput - 32 ) * 5 / 9;
-document.write("<p>" + fahrenheitInput + "<sup>0</sup>F is " + celsius + "<sup>0</sup>C</p>");
+// var fahrenheitInput = +prompt("Enter temperature in Fahrenheit", "70");
+// var celsius = (fahrenheitInput - 32 ) * 5 / 9;
+// document.write("<p>" + fahrenheitInput + "<sup>0</sup>F is " + celsius + "<sup>0</sup>C</p>");
 
 
 //7
@@ -130,6 +130,15 @@ document.write("<p>Radius of a circle: </p>");
 document.write("<p>The circumference is: </p>");
 document.write("<p>The area is: </p>");
 
+//12
+var radius = 20;
+var area = radius * 3.142 * 2;
+
+
+document.write("<p>Radius of a circle: " + radius + "<p>");
+document.write("<p>The circumference is: " + area + "</p>");
+document.write("<p>The area is: " + area.toFixed(2) + "</p>");
+
 
 
 
@@ -138,6 +147,13 @@ document.write("<p>The area is: </p>");
 var favSnack = "chocolate chip";
 var currentAge = 15;
 var maxAge = 65;
-var snacksPerDay;
+var snacksPerDay = 3;
+var totalSnacks = (maxAge-currentAge) * snacksPerDay;
+
+document.write("<h1>The Lifetime Supply Calculator</h1>");
+document.write("<p>Favourite Snack: " + favSnack  + "</p>");
+document.write("<p>Current age: " + currentAge  + "</p>");
+document.write("<p>Estimated Maximum Age: " + maxAge  + "</p>");
+document.write("<p>You will need " + snacksPerDay +  " " + favSnack + " to last you until the ripe old age of " + maxAge + "</p>");
 
 
