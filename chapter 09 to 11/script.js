@@ -168,8 +168,109 @@ console.log("Grade: " + grade);
 console.log("Remarks: " + remarks);
 
 
-//7
-var randomNum = Math.round(Math.random()) * 10;
+// 7
+var randomNum = Math.random() * 10;
+randomNum = Math.round(randomNum);
+var userGuess = +prompt("Choose a number between 1 to 10");
+if(randomNum === userGuess)
+{
+    console.log("Bingo! Correct Answer");
+}
+else if(++userGuess === randomNum )
+{
+console.log("Close enough to correct answer");
+}
 
-console.log(randomNum);
+
+
+// 8
+var userInput = +prompt("Enter a number");
+var remainder = userInput % 3;
+
+if(remainder === 0)
+{
+    console.log("Your number is divisible by 3");
+}
+
+else
+{
+    console.log("Your number is not divisible by 3");
+}
+
+
+
+// 9
+
+var userInput2 = +prompt("Enter an odd number or even number");
+var isEven = false;
+var remaining = userInput2 % 2;
+if(remaining === 0)
+{
+    isEven = true;
+}
+
+if(isEven === true)
+{
+    console.log("Your number is even");
+}
+
+else
+{
+    console.log("Your number is odd");
+}
+
+
+
+//10
+var inputTemperature = +prompt("Enter Temperature");
+var tempMessage;
+if(inputTemperature > 40)
+{
+    tempMessage = "It is too hot outside."
+}
+
+else if(inputTemperature > 30)
+{
+    tempMessage = "The Weather today is normal";
+}
+
+else if(inputTemperature > 20)
+{
+    tempMessage = "Today's Weather is cool";
+}
+
+else if(inputTemperature > 10)
+{
+    tempMessage = "Today's Weather is so cool";
+}
+
+console.log(tempMessage);
+
+
+// 11
+var num1Input = +prompt("Enter first number");
+var num2Input = +prompt("Enter second number");
+var operatorInput = prompt("Enter any single arthimetic operator");
+var result;
+if(operatorInput === "+")
+{
+    result = num1Input + num2Input;
+}
+
+else if(operatorInput === "-")
+{
+    result = num1Input - num2Input;
+}
+
+else if(operatorInput === "*")
+{
+    result = num1Input * num2Input;
+}
+
+else if(operatorInput === "/")
+{
+    result = num1Input / num2Input;
+}
+
+console.log(result);
 
